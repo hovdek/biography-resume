@@ -1,0 +1,166 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ************ */
+/*  grid area  */
+/* ************ */
+
+.about-me {
+    grid-area: about-me;
+}
+
+.aside1 {
+    grid-area: aside1;
+}
+
+.aside2 {
+    grid-area: aside2;
+}
+
+.aside3 {
+    grid-area: aside3;
+}
+
+.coding {
+    grid-area: coding;
+}
+
+.careers {
+    grid-area: careers;
+}
+
+
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "about-me about-me aside1"
+    "aside3 coding coding"
+    "careers careers aside2";
+    grid-gap: 10px;
+}
+
+/* ************ */
+/*   elements   */
+/* ************ */
+
+header {
+    background-color: #091212;
+    background-image: url('plant-medium-opacity.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.welcome {
+    font-size: 1.25em;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+body {
+    margin: 0px;
+    background-color: #091212;
+    color: white;
+    font-weight: 100;
+}
+
+a, .link {
+    text-decoration: none;
+    color: #e8f1d9;
+    padding: 2px;
+}
+
+footer  {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* ************ */
+/*    classes   */
+/* ************ */
+
+.fancy {
+    font-size: 2em;
+    color: #728271;
+    font-weight: 600;
+}
+
+.link-hover:hover {
+    transition: 0.25s;
+    background-color: #e8f1d9;
+    color: #091212;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px #e8f1d9;
+}
+
+.link-hover:focus {
+    transition: 0.25s;
+    background-color: #e8f1d9;
+    color: #091212;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px #e8f1d9;
+}
+
+/* .img-shadow:hover {
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px #e8f1e8;
+    border-radius: 50px;
+} */
+
+.icon-credit {
+    font-size: 0.5em;
+    margin-top: 10px;
+}
+
+.aside1-lowered {
+    margin-top: 42px;
+}
+
+.aside3-lowered {
+    margin-top: 48px;
+}
+
+.aside2-lowered {
+    margin-top: 42px;
+}
+
+/* ************ */
+/*     id's     */
+/* ************ */
+
+
+/* ************ */
+/* media queries */
+/* ************ */
+
+
+@media screen and (max-width: 499px) {
+    .grid-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "about-me"
+        "aside1"
+        "coding"
+        "aside3"
+        "careers"
+        "aside2";
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .aside1-lowered, .aside3-lowered, .aside2-lowered {
+        margin-top: 0;
+    }
+}
