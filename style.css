@@ -188,7 +188,7 @@ footer  {
 }
 
 @media screen and (min-width:499px) and (max-width: 899px) {
-    body {
+    .content {
         word-wrap: break-word;
         display: inline-block;
     }
