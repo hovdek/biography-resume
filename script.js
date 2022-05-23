@@ -1,8 +1,8 @@
 function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var hamburgerMenu = document.getElementById("myLinks");
+    if (hamburgerMenu.style.display === "block") {
+        hamburgerMenu.style.display = "none";
     } else {
-        x.style.display = "block";
+        hamburgerMenu.style.display = "block";
     }
 }
