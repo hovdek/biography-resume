@@ -129,7 +129,7 @@ footer  {
 
 .content {
     margin: 0 auto;
-    width: 900px;
+    
 }
 
 
@@ -181,14 +181,23 @@ footer  {
 /* media queries */
 /* ************ */
 
+@media screen and (min-width: 900px) {
+    .content {
+        width: 900px;
+    }
+}
+
+@media screen and (min-width:499px) and (max-width: 899px) {
+    body {
+        word-wrap: break-word;
+        display: inline-block;
+    }
+
+}
+
 @media screen and (min-width: 499px) {
     .icon {
         display: none;
-    }
-
-    body {
-        word-wrap: break-word;
-        
     }
 }
 
