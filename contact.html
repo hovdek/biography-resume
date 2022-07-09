@@ -29,10 +29,35 @@
     <!-- content -->
 
     <body>
-        <div class="contact-me content">
-            <p>content coming soon</p>
+        <div class="grid-area content">
+            <div id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <div class="aside">
+                    <aside class="aside-lowered contact-aside">Looking to get in touch with me?<br>Fill out the following form! </aside>
+                </div>
+                    <form action="action_page.php">
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" class="form" id="firstName" name="firstName" placeholder="First Name"><br>
+
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" class="form" id="lastName" name="lastName" placeholder="Last Name"><br>
+
+                        <label for="contactEmail">Email:</label><br>
+                        <input type="text" class="form" id="contactEmail" name="contactEmail" placeholder="Email"><br>
+
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" class="form" id="subject" name="subject" placeholder="Subject"><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea class="form message" id="message" name="message" placeholder="Type message here..."></textarea><br>
+
+                        <input type="submit" value="submit" class="submit">
+
+                    </form>
+
+            
+
         </div>
-        
     </body>
 
     <script src="script.js"></script>
