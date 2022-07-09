@@ -171,6 +171,10 @@ footer  {
     margin-top: 10px;
 }
 
+.form:focus {
+    accent-color: #728271;
+}
+
 .contact-aside {
     margin-bottom: 10px;
 }
@@ -183,9 +187,7 @@ footer  {
     border-radius: 2px;
 }
 
-.form:focus {
-    accent-color: #728271;
-}
+
 
 .submit:hover {
     box-shadow: 0px 0px 5px #e8f1d9;
